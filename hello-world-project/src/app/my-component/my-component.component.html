@@ -1,0 +1,28 @@
+<app-header>
+</app-header>
+<div class="container">
+    <h1>List Of All Users</h1>
+
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Email</td>
+                <td>Phone</td>
+                <!-- <td>Password</td> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.firstname}}</td>
+                <td>{{user.lastname}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.mobile}}</td>
+              
+                <!-- <td>{{user.Password}}</td> -->
+            </tr>
+        </tbody>
+    </table>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+ 
+.bkImage {
+  opacity: 60%;
+  height: 100%;
+  display: block;
+  min-width: fit-content;
+  background-image: url("../../../assets/Home-pg-header-banner.svg");
+  background-repeat: no-repeat;
+  background-blend-mode: color;
+  background-size: auto;
+  background-attachment: fixed;
+  background-position-y: 90%;
+
+}
+
+.background {
+  
+  position: relative;
+  /* margin-top: -490px;
+  padding-top: -10px; */
+  top: -100%;
+  font-family: 'Manrope', 'Noto Sans', 'Courier New', Courier, monospace;
+}
+
+h1,
+h3 {
+  font-weight: 1000;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.p {
+  color: #e2504b;
+}
+
+.info {
+  font-family: 'Noto Sans', sans-serif;
+}

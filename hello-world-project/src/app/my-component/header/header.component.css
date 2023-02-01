@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+#docquity_logo{
+    width: auto;
+    height: 35px;
+}
+
+.margin-left{
+    margin-left: 10px !important;
+}

@@ -1,0 +1,65 @@
+<div class="login">
+    <form [formGroup]="loginForm" (submit)="loginSubmit()"class="border p-3 rounded-2">
+        <div class="row g-0">
+            <div class="col text-center p-2 mb-3 bg-light">
+                <span class="fs-3">Login</span>
+            </div>
+        </div>
+        
+        <div class="row ps-2">
+            <div class="col ps-2 mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" formControlName="email" [ngClass]="{'is-invalid':submitted && form['email'].errors}">
+                <div class="form-text">
+                    <div *ngIf="submitted && form['email'].errors" class="text-danger">
+                        <div *ngIf="submitted && form['email'].errors['required']">
+                          Email Address is required
+                        </div>
+                        <div *ngIf="submitted && form['email'].errors['email']&& form['email'].errors['pattern']">
+                          Only Docquity members can login! use: @docquity.com
+                        </div>
+                        
+                      </div>
+                </div>
+            </div>
+    
+        </div>
+        <div class="row ps-2">
+            <div class="col ps-2 mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" formControlName="password"  >
+                <div class="form-text">
+                    <div *ngIf="submitted && form['password'].errors" class="text-danger">
+                        <div *ngIf="submitted && form['password'].errors['required']">
+                          Passowrd is required
+                        </div>
+                        </div>
+                </div>
+            </div>
+          
+        </div>
+        <div class="row p-2 m-2">
+        <div *ngIf="submitted && !userExist" class="text-danger">
+            Email or Password Incorrect!
+           </div>
+           </div>
+           
+    
+        <div class="row ps-2">
+            <div class="col-6 ps-2 mb-3">
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                </div>
+            </div>
+        </div>
+   
+        <div class="row ps-2">
+            <div class="col-6 ps-2 mb-3">
+                <div class="d-grid">
+                <p class="log">Let's get you <a [routerLink]="['/auth/register' ]">Register</a>
+                    
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>

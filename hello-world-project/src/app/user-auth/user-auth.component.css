@@ -1,0 +1,47 @@
+.container{
+    margin: 1%;
+    min-height: 500px;
+}
+.log{
+    margin-top: 2%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+.container {
+  height: max-content;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Image Image loginReg"
+    "Image Image loginReg"
+    "Image Image loginReg";
+}
+
+.Image {
+  /* margin-top: 10%; */
+  margin: 25px;
+  min-height: max-content;
+  grid-area: Image;
+  justify-content: center;
+  background-size: cover;
+  /* display: none; */
+  background: rgba(255,255,255,0.5);
+}
+
+.loginReg {
+  min-height: max-content;
+  margin-top: 10%;
+  width: 110%;
+  align-items: center;
+  margin: 20px;
+  margin-top: 5%;
+  grid-area: loginReg;
+  padding: 10px;
+}
+.change{
+    align-items: baseline;
+}

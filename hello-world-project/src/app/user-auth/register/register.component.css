@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+input.ng-invalid.ng-touched{
+  border-left: 5px solid red;
+}
+input ng-submit{
+  border-left: 5px solid red;
+}
+
+input.ng-valid{
+  border-left: 5px solid green;
+}
+.passwordErr{
+  font-size: small !important;
+}
+
